@@ -1,0 +1,13 @@
+# video2gif.py 的依赖
+# 基础依赖（必需）：负责 GIF 缩放、调色板量化与写出
+pillow>=9.0
+numpy>=1.20
+
+# 视频解码后端（至少装一个；脚本会自动挑选可用的那个）
+# 方案 A：推荐，速度最快、兼容性最好
+opencv-python>=4.5
+# 方案 B：纯 Python，会自带静态 ffmpeg
+imageio>=2.9
+imageio-ffmpeg>=0.4
+# 方案 C：自行安装 ffmpeg 可执行文件并加入 PATH（不需要 pip 包）
+#   https://ffmpeg.org/download.html
